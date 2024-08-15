@@ -219,7 +219,7 @@ function InstructorDashboard() {
                         <span class="d-none d-sm-inline">Upload Files</span>
                       </Link>
                     </li>
-                    <li class="w-100 ml-2">
+                    {/* <li class="w-100 ml-2">
                       <Link to="/instruct/tutorial" class="nav-link px-2">
                         <i
                           class="fa fa-arrow-right px-1"
@@ -227,7 +227,7 @@ function InstructorDashboard() {
                         ></i>
                         <span class="d-none d-sm-inline">Create Tutorial</span>
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/actions" class="nav-link px-2">
                         <i

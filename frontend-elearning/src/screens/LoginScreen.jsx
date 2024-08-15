@@ -132,7 +132,8 @@ const [errmsg,setErrmsg]=useState()
                     onChange={(e) => setUserName(e.target.value)}
                     placeholder="Enter Username"
                     type="text"
-                    
+                      //added
+                    style={{ textTransform: 'none' }}
                   />
                   {errors.userid && <small className="text-danger float-right">{errors.userid}</small>}
                 </FormGroup>

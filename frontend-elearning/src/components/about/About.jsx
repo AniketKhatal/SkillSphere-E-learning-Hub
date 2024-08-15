@@ -13,7 +13,7 @@ function About() {
 
 <div class="card">
   <div class="image">
-    {/* <img src={require("../about/Amar.jpg")}/> */}
+    {/* <img src={require("../about/AniketKhatal.jpg")}/> */}
   </div>
   <div class="info">
     <h4> </h4>
@@ -24,7 +24,7 @@ function About() {
 
 <div class="card">
   <div class="image">
-    {/* <img  src={require("../about/Shiv.jpg")}/> */}
+    {/* <img  src={require("../about/ShubhamRokade.jpg")}/> */}
   </div>
   <div class="info">
     <h4> </h4>
@@ -35,7 +35,7 @@ function About() {
 
 <div class="card">
   <div class="image">
-    {/* <img src={require("../about/Ashlekh[1].jpg")} alt=""/> */}
+    {/* <img src={require("../about/PiyushChaudhari[1].jpg")} alt=""/> */}
   </div>
   <div class="info">
     <h4> </h4>
@@ -45,7 +45,7 @@ function About() {
 </div>
 {/* <div class="card">
   <div class="image">
-    <img src={require("../about/recent.jpg")} alt=""/>
+    <img src={require("../about/VirajBagade.jpg")} alt=""/>
   </div>
   <div class="info">
     <h4> </h4>
@@ -55,7 +55,17 @@ function About() {
 </div> */}
 {/* <div class="card">
   <div class="image">
-    <img src={require("../about/sandeep.jpeg")} alt=""/>
+    <img src={require("../about/AnshulMalviya.jpeg")} alt=""/>
+  </div>
+  <div class="info">
+    <h4></h4>
+    <h4></h4>
+    
+  </div>
+</div> */}
+{/* <div class="card">
+  <div class="image">
+    <img src={require("../about/SakshiPandavde.jpeg")} alt=""/>
   </div>
   <div class="info">
     <h4></h4>

@@ -65,7 +65,7 @@ function About() {
 </div> */}
 {/* <div class="card">
   <div class="image">
-    <img src={require("../about/SakshiPandavde.jpeg")} alt=""/>
+    <img src={require("../about/SakshiPandav.jpeg")} alt=""/>
   </div>
   <div class="info">
     <h4></h4>

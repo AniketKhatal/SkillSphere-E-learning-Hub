@@ -51,7 +51,7 @@ const Footer = () => {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        &copy; 2022 copyright
+        &copy; 2024 copyright
         {/* <a className="text-white" href="#">
           e-learning.com
         </a> */}

@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-
 import {
   Button,
   Card,
@@ -10,14 +9,15 @@ import {
   Col,
   Container,
   Form,
-  FormFeedback,
   FormGroup,
   Input,
   Label,
   Row,
 } from "reactstrap";
 
+// Function component for the 'Aproove' form
 function Aproove() {
+  // State variables to store form data
   const [qualify, setQualify] = useState("");
   const [exp, setExp] = useState("");
   const [cert, setCert] = useState("");
@@ -25,9 +25,11 @@ function Aproove() {
   const [status, setStatus] = useState("no");
   const [uid, setUid] = useState();
 
+  // Accessing the user login state from Redux store
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
 
+  // useEffect hook to get the user ID by name after component mounts
   useEffect(() => {
     const getIdByName = async () => {
       try {
@@ -36,13 +38,14 @@ function Aproove() {
             "Content-type": "application/json",
           },
         };
-        //destructuring original => res.data
+        // Making a POST request to get the user ID based on user name
         const { data } = await axios.post(
           "http://localhost:9090/api/elearning/getuid",
           { userName: userInfo },
           config
         );
 
+        // Setting the user ID state
         setUid(data);
       } catch (error) {
         console.log(error);
@@ -50,10 +53,11 @@ function Aproove() {
     };
 
     getIdByName();
-  }, []);
+  }, [userInfo]); // Dependency array includes userInfo to re-run the effect if userInfo changes
 
+  // Form submit handler
   const submitHandler = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Preventing the default form submission behavior
 
     const submi = async () => {
       try {
@@ -62,7 +66,7 @@ function Aproove() {
             "Content-type": "application/json",
           },
         };
-        //destructuring original => res.data
+        // Making a POST request to submit the approval form data
         const { data } = await axios.post(
           "http://localhost:9090/api/elearning/instructor/getapprove",
           {
@@ -76,8 +80,10 @@ function Aproove() {
           config
         );
 
+        // Alerting the user with the response data
         alert(data);
 
+        // Resetting the form fields
         setCert("");
         setExp("");
         setQualify("");
@@ -101,7 +107,7 @@ function Aproove() {
             <CardBody>
               <Form onSubmit={submitHandler}>
                 <FormGroup>
-                  <Label for="firstName">Full Name</Label>
+                  <Label for="userName">Full Name</Label>
                   <Input
                     id="userName"
                     placeholder="Enter qualification"
@@ -112,20 +118,19 @@ function Aproove() {
                   />
                 </FormGroup>
                 <FormGroup>
-                  <Label for="firstName">Experience</Label>
+                  <Label for="experience">Experience</Label>
                   <Input
-                    id="firstName"
+                    id="experience"
                     placeholder="Enter your experience"
                     type="text"
                     value={exp}
                     onChange={(e) => setExp(e.target.value)}
                   />
                 </FormGroup>
-
                 <FormGroup>
-                  <Label for="lastName">Certifications</Label>
+                  <Label for="certifications">Certifications</Label>
                   <Input
-                    id="lastName"
+                    id="certifications"
                     placeholder="Enter your certifications"
                     type="text"
                     value={cert}
@@ -133,17 +138,15 @@ function Aproove() {
                     required
                   />
                 </FormGroup>
-
                 <FormGroup>
-                  <Label for="userAddress">Description</Label>
+                  <Label for="description">Description</Label>
                   <Input
-                    id="userAddress"
+                    id="description"
                     type="textarea"
                     value={desc}
                     onChange={(e) => setDesc(e.target.value)}
                   />
                 </FormGroup>
-
                 <Container className="text-center">
                   <Button type="submit" color="success">
                     Submit

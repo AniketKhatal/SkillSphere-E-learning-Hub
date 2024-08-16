@@ -149,7 +149,7 @@ See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Shubham Rokade: <br>
+Aniket Goraksha Khatal: <br>
 [Linked-In](https://www.linkedin.com/in/aniket-khatal/) <br>
 [Link-Tree](https://linktr.ee/AniketKhatal)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -50,9 +50,33 @@ System Features:
 * You should implement DRY principles to the rest of your life :smile:
 Use the `BLANK_README.md` to get started.
 -->
+<!--
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+-->
 
+<!-- SCREENSHOTS -->
+## Project Preview
 
+1. Home Page:
+  <img src="https://github.com/shubhamrokade277/Skill_Sphere/blob/main/Readme/homePage.png?raw=true" alt="Screenshot 2024-08-16 022101" width="500"/>
+
+2. Login Page:
+  <img src="https://github.com/shubhamrokade277/Skill_Sphere/blob/main/Readme/loginPage.png?raw=true" alt="Screenshot 2024-08-16 022101" width="500"/>
+
+3. Dashboard:
+  <img src="https://github.com/shubhamrokade277/Skill_Sphere/blob/main/Readme/Dashboard.png?raw=true" alt="Screenshot 2024-08-16 022101" width="500"/>
+
+4. Add Course Page:
+  <img src="https://github.com/shubhamrokade277/Skill_Sphere/blob/main/Readme/AddCourse.png?raw=true" alt="Screenshot 2024-08-16 022101" width="500"/>
+
+5. Purchase Course Window:
+  <img src="https://github.com/shubhamrokade277/Skill_Sphere/blob/main/Readme/purchasePage.png?raw=true" alt="Screenshot 2024-08-16 022101" width="500"/>
+
+6. All Student Courses:
+  <img src="https://github.com/shubhamrokade277/Skill_Sphere/blob/main/Readme/studentCourses.png?raw=true" alt="Screenshot 2024-08-16 022101" width="500"/>
+
+7. Course Access Page:
+  <img src="https://github.com/shubhamrokade277/Skill_Sphere/blob/main/Readme/courseAccess.png?raw=true" alt="Screenshot 2024-08-16 022101" width="500"/>
 
 
 <!-- GETTING STARTED -->
@@ -153,6 +177,7 @@ Aniket Goraksha Khatal: <br>
 [Linked-In](https://www.linkedin.com/in/aniket-khatal/) <br>
 [Link-Tree](https://linktr.ee/AniketKhatal)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
